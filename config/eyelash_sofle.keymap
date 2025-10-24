@@ -133,21 +133,33 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Main {
+        main {
             bindings = <
-&kp PAGE_UP  &kp N1            &kp N2             &kp N3            &kp N4             &kp N5     &bt BT_SEL 0  &kp N6           &kp N7  &kp N8         &kp N9   &kp N0            &kp PAGE_DOWN
-&esc_to_tab  &kp Q             &kp W              &kp E             &kp R              &kp T      &bt BT_SEL 2  &kp Y            &kp U   &kp I          &kp O    &kp P             &kp BACKSPACE
-&kp CAPS     &hrm_left LALT A  &hrm_left LCTRL S  &hrm_left LCMD D  &hrm_left LSHFT F  &kp G      &bt BT_SEL 3  &kp H            &kp J   &kp K          &kp L    &kp SEMI          &kp APOS
-&kp LCMD     &kp Z             &kp X              &kp C             &kp V              &kp B      &bt BT_SEL 1  &kp N            &kp M   &kp COMMA      &kp DOT  &lt 3 SLASH       &shortcat
-&trans       &kp LCMD          &kp LCTRL          &kp LSHFT         &lt 1 SPACE        &kp TAB    &bt BT_CLR    &mt RCTRL ENTER  &mo 2   &kp BACKSPACE  &kp DEL  &msc MOVE_Y(-15)
+&kp PAGE_UP  &kp N1            &kp N2             &kp N3            &kp N4             &kp N5       &bt BT_SEL 0  &kp N6           &kp N7  &kp N8         &kp N9   &kp N0            &kp PAGE_DOWN
+&esc_to_tab  &kp Q             &kp W              &kp E             &kp R              &kp T        &bt BT_SEL 2  &kp Y            &kp U   &kp I          &kp O    &kp P             &kp BACKSPACE
+&kp CAPS     &hrm_left LALT A  &hrm_left LCTRL S  &hrm_left LCMD D  &hrm_left LSHFT F  &kp G        &bt BT_SEL 3  &kp H            &kp J   &kp K          &kp L    &kp SEMI          &kp APOS
+&kp LCMD     &kp Z             &kp X              &kp C             &kp V              &kp B        &bt BT_SEL 1  &kp N            &kp M   &kp COMMA      &kp DOT  &lt 3 SLASH       &shortcat
+&trans       &kp LCMD          &kp LCTRL          &kp LSHFT         &lt 2 SPACE        &lt 4 TAB    &bt BT_CLR    &mt RCTRL ENTER  &mo 1   &kp BACKSPACE  &kp DEL  &msc MOVE_Y(-15)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "LAYER0";
+            display-name = "man";
             label = "main";
         };
 
-        Symbol {
+        navigation {
+            bindings = <
+&trans  &kp F1           &kp F2           &kp F3           &kp F4             &kp F5             &mmv MOVE_UP     &kp F6           &kp F7                       &kp F8                    &kp F9                  &kp F10              &trans
+&trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4    &kp KP_NUMBER_5    &mmv MOVE_DOWN   &kp KP_NUMBER_6  &kp KP_NUMBER_7              &kp KP_NUMBER_8           &kp KP_NUMBER_9         &kp KP_NUMBER_0      &trans
+&trans  &kp LALT         &kp LCTRL        &kp LCMD         &kp LSHFT          &kp PAGE_UP        &mmv MOVE_LEFT   &kp LEFT_ARROW   &hrm_right RSHFT DOWN_ARROW  &hrm_right RCMD UP_ARROW  &hrm_right RCTRL RIGHT  &hrm_right RALT END  &trans
+&trans  &trans           &kp K_MUTE       &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp PAGE_DOWN      &mmv MOVE_RIGHT  &trans           &kp PAGE_DOWN                &kp PAGE_UP               &kp F11                 &kp F12              &trans
+&trans  &trans           &trans           &trans           &trans             &trans             &mkp LCLK        &trans           &trans                       &trans                    &trans                  &trans
+            >;
+
+            display-name = "navnum";
+        };
+
+        symbol {
             bindings = <
 &trans      &trans                &trans               &trans                   &trans                   &kp LESS_THAN           &trans  &kp GREATER_THAN       &trans                       &trans                    &trans                          &trans                 &trans
 &kp ESCAPE  &kp EXCLAMATION       &kp AT_SIGN          &kp HASH                 &kp DOLLAR               &kp LEFT_PARENTHESIS    &trans  &kp RIGHT_PARENTHESIS  &kp AMPERSAND                &kp ASTERISK              &kp PIPE                        &kp BACKSLASH          &kp BACKSPACE
@@ -159,19 +171,7 @@
             display-name = "sym";
         };
 
-        Navigation {
-            bindings = <
-&trans  &kp F1    &kp F2     &kp F3     &kp F4     &kp F5      &mmv MOVE_UP     &kp F6          &kp F7                       &kp F8                    &kp F9                  &kp F10              &trans
-&trans  &trans    &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4    &mmv MOVE_DOWN   &trans          &mkp LCLK                    &mkp RCLK                 &mkp MCLK               &kp INS              &trans
-&trans  &kp LALT  &kp LCTRL  &kp LCMD   &kp LSHFT  &mkp MB5    &mmv MOVE_LEFT   &kp LEFT_ARROW  &hrm_right RSHFT DOWN_ARROW  &hrm_right RCMD UP_ARROW  &hrm_right RCTRL RIGHT  &hrm_right RALT END  &trans
-&trans  &trans    &trans     &trans     &trans     &trans      &mmv MOVE_RIGHT  &trans          &kp PAGE_DOWN                &kp PAGE_UP               &kp F11                 &kp F12              &trans
-&trans  &trans    &trans     &trans     &trans     &trans      &mkp LCLK        &trans          &trans                       &trans                    &trans                  &trans
-            >;
-
-            display-name = "nav";
-        };
-
-        System {
+        system {
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4       &trans           &kp F6           &kp F7           &kp F8           &kp F9   &kp F10  &trans
 &trans  &bt BT_CLR    &bt BT_CLR_ALL  &soft_off     &sys_reset       &bootloader        &trans           &bootloader      &sys_reset       &soft_off        &kp F11  &kp F12  &trans
@@ -182,6 +182,17 @@
 
             display-name = "sys";
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        mouse {
+            display-name = "mos";
+            bindings = <
+&trans  &kp F1    &kp F2     &kp F3     &kp F4     &kp F5      &mmv MOVE_UP     &kp F6          &kp F7                       &kp F8                    &kp F9                  &kp F10              &trans
+&trans  &trans    &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4    &mmv MOVE_DOWN   &trans          &mkp LCLK                    &mkp RCLK                 &mkp MCLK               &kp INS              &trans
+&trans  &kp LALT  &kp LCTRL  &kp LCMD   &kp LSHFT  &mkp MB5    &mmv MOVE_LEFT   &kp LEFT_ARROW  &hrm_right RSHFT DOWN_ARROW  &hrm_right RCMD UP_ARROW  &hrm_right RCTRL RIGHT  &hrm_right RALT END  &trans
+&trans  &trans    &trans     &trans     &trans     &trans      &mmv MOVE_RIGHT  &trans          &kp PAGE_DOWN                &kp PAGE_UP               &kp F11                 &kp F12              &trans
+&trans  &trans    &trans     &trans     &trans     &trans      &mkp LCLK        &trans          &trans                       &trans                    &trans                  &trans
+            >;
         };
     };
 };
