@@ -91,6 +91,16 @@
             bindings = <&screenlock>;
             key-positions = <61 12>;
         };
+
+        tog_layer_4 {
+            bindings = <&tog 4>;
+            key-positions = <61 11>;
+        };
+
+        restart {
+            bindings = <&sys_reset>;
+            key-positions = <12 0>;
+        };
     };
 
     macros {
