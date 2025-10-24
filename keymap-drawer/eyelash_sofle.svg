@@ -679,6 +679,20 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="770" y="145" width="28" height="26" class="combo"/>
 <text x="784" y="158" class="combo tap"><tspan style="font-size: 60%">&amp;screenlo…</tspan></text>
 </g>
+<g class="combo combopos-2">
+<path d="M756,158 l-72,87" class="combo"/>
+<path d="M756,158 l72,-87" class="combo"/>
+<rect rx="6" ry="6" x="742" y="145" width="28" height="26" class="combo"/>
+<a href="#mos">
+<text x="756" y="158" class="combo tap layer-activator">mos</text>
+</a><text x="756" y="169" class="combo hold">toggle</text>
+</g>
+<g class="combo bootloader combopos-3">
+<path d="M462,56 l415,0" class="combo"/>
+<path d="M462,56 l-415,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="43" width="28" height="26" class="combo bootloader"/>
+<use href="#mdi:backup-restore" xlink:href="#mdi:backup-restore" x="453" y="47" height="18" width="18.0" class="combo bootloader tap glyph mdi:backup-restore"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 388)" class="layer-navnum">
@@ -1042,6 +1056,20 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="770" y="145" width="28" height="26" class="combo"/>
 <text x="784" y="158" class="combo tap"><tspan style="font-size: 60%">&amp;screenlo…</tspan></text>
 </g>
+<g class="combo combopos-2">
+<path d="M756,158 l-72,87" class="combo"/>
+<path d="M756,158 l72,-87" class="combo"/>
+<rect rx="6" ry="6" x="742" y="145" width="28" height="26" class="combo"/>
+<a href="#mos">
+<text x="756" y="158" class="combo tap layer-activator">mos</text>
+</a><text x="756" y="169" class="combo hold">toggle</text>
+</g>
+<g class="combo bootloader combopos-3">
+<path d="M462,56 l415,0" class="combo"/>
+<path d="M462,56 l-415,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="43" width="28" height="26" class="combo bootloader"/>
+<use href="#mdi:backup-restore" xlink:href="#mdi:backup-restore" x="453" y="47" height="18" width="18.0" class="combo bootloader tap glyph mdi:backup-restore"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 776)" class="layer-sym">
@@ -1395,6 +1423,20 @@ rect.held, rect.combo.held {
 <path d="M784,158 l98,-89" class="combo"/>
 <rect rx="6" ry="6" x="770" y="145" width="28" height="26" class="combo"/>
 <text x="784" y="158" class="combo tap"><tspan style="font-size: 60%">&amp;screenlo…</tspan></text>
+</g>
+<g class="combo combopos-2">
+<path d="M756,158 l-72,87" class="combo"/>
+<path d="M756,158 l72,-87" class="combo"/>
+<rect rx="6" ry="6" x="742" y="145" width="28" height="26" class="combo"/>
+<a href="#mos">
+<text x="756" y="158" class="combo tap layer-activator">mos</text>
+</a><text x="756" y="169" class="combo hold">toggle</text>
+</g>
+<g class="combo bootloader combopos-3">
+<path d="M462,56 l415,0" class="combo"/>
+<path d="M462,56 l-415,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="43" width="28" height="26" class="combo bootloader"/>
+<use href="#mdi:backup-restore" xlink:href="#mdi:backup-restore" x="453" y="47" height="18" width="18.0" class="combo bootloader tap glyph mdi:backup-restore"/>
 </g>
 </g>
 </g>
@@ -1772,6 +1814,20 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="770" y="145" width="28" height="26" class="combo"/>
 <text x="784" y="158" class="combo tap"><tspan style="font-size: 60%">&amp;screenlo…</tspan></text>
 </g>
+<g class="combo combopos-2">
+<path d="M756,158 l-72,87" class="combo"/>
+<path d="M756,158 l72,-87" class="combo"/>
+<rect rx="6" ry="6" x="742" y="145" width="28" height="26" class="combo"/>
+<a href="#mos">
+<text x="756" y="158" class="combo tap layer-activator">mos</text>
+</a><text x="756" y="169" class="combo hold">toggle</text>
+</g>
+<g class="combo bootloader combopos-3">
+<path d="M462,56 l415,0" class="combo"/>
+<path d="M462,56 l-415,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="43" width="28" height="26" class="combo bootloader"/>
+<use href="#mdi:backup-restore" xlink:href="#mdi:backup-restore" x="453" y="47" height="18" width="18.0" class="combo bootloader tap glyph mdi:backup-restore"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1553)" class="layer-mos">
@@ -2114,6 +2170,20 @@ rect.held, rect.combo.held {
 <path d="M784,158 l98,-89" class="combo"/>
 <rect rx="6" ry="6" x="770" y="145" width="28" height="26" class="combo"/>
 <text x="784" y="158" class="combo tap"><tspan style="font-size: 60%">&amp;screenlo…</tspan></text>
+</g>
+<g class="combo combopos-2">
+<path d="M756,158 l-72,87" class="combo"/>
+<path d="M756,158 l72,-87" class="combo"/>
+<rect rx="6" ry="6" x="742" y="145" width="28" height="26" class="combo"/>
+<a href="#mos">
+<text x="756" y="158" class="combo tap layer-activator">mos</text>
+</a><text x="756" y="169" class="combo hold">toggle</text>
+</g>
+<g class="combo bootloader combopos-3">
+<path d="M462,56 l415,0" class="combo"/>
+<path d="M462,56 l-415,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="43" width="28" height="26" class="combo bootloader"/>
+<use href="#mdi:backup-restore" xlink:href="#mdi:backup-restore" x="453" y="47" height="18" width="18.0" class="combo bootloader tap glyph mdi:backup-restore"/>
 </g>
 </g>
 </g>

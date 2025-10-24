@@ -330,3 +330,7 @@ combos:
   k: '&soft_off'
 - p: [61, 12]
   k: '&screenlock'
+- p: [61, 11]
+  k: {t: mos, h: toggle}
+- p: [12, 0]
+  k: {t: '$$mdi:backup-restore$$', type: bootloader}
