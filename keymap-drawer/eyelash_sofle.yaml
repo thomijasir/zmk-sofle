@@ -35,10 +35,10 @@ layers:
   - G
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
   - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-option$$', s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-command$$
   - Z
@@ -61,8 +61,8 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: mos}
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:backspace$$', h: navnum}
   - navnum
-  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
   - '&msc MOVE_Y(-15)'
   navnum:
@@ -127,7 +127,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   sym:
