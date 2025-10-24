@@ -14,7 +14,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - PgDn
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-esc$$', s: '$$mdi:keyboard-tab$$'}
   - Q
   - W
   - E
@@ -54,7 +54,7 @@ layers:
   - {t: /, h: sys, s: '?'}
   - '&shortcat'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-esc$$', s: '$$mdi:keyboard-tab$$'}
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-space$$', h: sym}
