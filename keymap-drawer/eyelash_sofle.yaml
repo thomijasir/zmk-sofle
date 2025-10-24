@@ -20,7 +20,7 @@ layers:
   - E
   - R
   - T
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - Y
   - U
   - I
