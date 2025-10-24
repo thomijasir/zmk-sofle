@@ -244,9 +244,9 @@ layers:
   - RGB EFF
   - RGB SPI
   - RGB SPD
+  - RGB TOG
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: RGB TOG, type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
