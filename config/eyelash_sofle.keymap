@@ -158,11 +158,11 @@
 
         main {
             bindings = <
-&kp ESCAPE                &kp N1            &kp N2             &kp N3            &kp N4             &kp N5       &bt BT_SEL 0  &kp N6           &kp N7              &kp N8             &kp N9              &kp N0                     &kp F12
-&esc_to_tab               &kp Q             &kp W              &kp E             &kp R              &kp T        &bt BT_SEL 1  &kp Y            &kp U               &kp I              &kp O               &kp P                      &kp BACKSPACE
-&hrm_left LSHFT CAPSLOCK  &hrm_left LALT A  &hrm_left LCTRL S  &hrm_left LCMD D  &hrm_left LSHFT F  &lt 5 G      &bt BT_PRV    &kp H            &hrm_right RSHFT J  &hrm_right RCMD K  &hrm_right RCTRL L  &hrm_right RALT SEMICOLON  &kp APOS
-&kp LCMD                  &kp Z             &kp X              &kp C             &kp V              &kp B        &bt BT_NXT    &kp N            &kp M               &kp COMMA          &kp DOT             &lt 3 SLASH                &shortcat_combo RC(RIGHT_SHIFT) 0
-&trans                    &kp LCMD          &kp LC(UP_ARROW)   &kp LSHFT         &lt 2 SPACE        &lt 4 TAB    &bt BT_CLR    &mt RCTRL ENTER  &mo 1               &kp BACKSPACE      &kp DEL             &msc MOVE_Y(-15)
+&kp ESCAPE                &kp N1                  &kp N2             &kp N3            &kp N4             &kp N5       &bt BT_SEL 0  &kp N6           &kp N7              &kp N8             &kp N9              &kp N0                     &kp F12
+&esc_to_tab               &kp Q                   &kp W              &kp E             &kp R              &kp T        &bt BT_SEL 1  &kp Y            &kp U               &kp I              &kp O               &kp P                      &kp BACKSPACE
+&hrm_left LSHFT CAPSLOCK  &hrm_left LALT A        &hrm_left LCTRL S  &hrm_left LCMD D  &hrm_left LSHFT F  &lt 5 G      &bt BT_PRV    &kp H            &hrm_right RSHFT J  &hrm_right RCMD K  &hrm_right RCTRL L  &hrm_right RALT SEMICOLON  &kp APOS
+&kp LCMD                  &kp Z                   &kp X              &kp C             &kp V              &kp B        &bt BT_NXT    &kp N            &kp M               &kp COMMA          &kp DOT             &lt 3 SLASH                &shortcat_combo RC(RIGHT_SHIFT) 0
+&trans                    &hrm_left LCMD LG(TAB)  &kp LC(UP_ARROW)   &kp LSHFT         &lt 2 SPACE        &lt 4 TAB    &bt BT_CLR    &mt RCTRL ENTER  &mo 1               &kp BACKSPACE      &kp DEL             &msc MOVE_Y(-15)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
