@@ -184,11 +184,11 @@
 
         symbol {
             bindings = <
-&trans       &kp EXCLAMATION       &kp AT_SIGN          &kp HASH                 &kp DOLLAR               &kp PERCENT             &trans  &kp CARET              &kp AMPERSAND                &kp ASTERISK              &kp PIPE                        &kp BACKSLASH          &trans
-&esc_to_tab  &kp EXCLAMATION       &kp AT_SIGN          &kp HASH                 &kp DOLLAR               &kp LEFT_PARENTHESIS    &trans  &kp RIGHT_PARENTHESIS  &kp AMPERSAND                &kp ASTERISK              &kp PIPE                        &kp BACKSLASH          &kp BACKSPACE
-&trans       &hrm_left LALT GRAVE  &hrm_left LCTRL SQT  &hrm_left LCMD KP_MINUS  &hrm_left LSHFT KP_PLUS  &kp LEFT_BRACE          &trans  &kp RIGHT_BRACE        &hrm_right RSHFT UNDERSCORE  &hrm_right RCMD KP_EQUAL  &hrm_right RCTRL DOUBLE_QUOTES  &hrm_right RALT TILDE  &trans
-&trans       &trans                &trans               &kp HOME                 &kp PERCENT              &kp LEFT_BRACKET        &trans  &kp RIGHT_BRACKET      &kp CARET                    &kp END                   &trans                          &trans                 &trans
-&trans       &trans                &trans               &trans                   &trans                   &trans                  &trans  &trans                 &trans                       &trans                    &trans                          &trans
+&trans         &kp EXCLAMATION       &kp AT_SIGN          &kp HASH                 &kp DOLLAR               &kp PERCENT             &trans  &kp CARET              &kp AMPERSAND                &kp ASTERISK              &kp PIPE                        &kp BACKSLASH          &trans
+&kp LG(GRAVE)  &kp EXCLAMATION       &kp AT_SIGN          &kp HASH                 &kp DOLLAR               &kp LEFT_PARENTHESIS    &trans  &kp RIGHT_PARENTHESIS  &kp AMPERSAND                &kp ASTERISK              &kp PIPE                        &kp BACKSLASH          &kp BACKSPACE
+&trans         &hrm_left LALT GRAVE  &hrm_left LCTRL SQT  &hrm_left LCMD KP_MINUS  &hrm_left LSHFT KP_PLUS  &kp LEFT_BRACE          &trans  &kp RIGHT_BRACE        &hrm_right RSHFT UNDERSCORE  &hrm_right RCMD KP_EQUAL  &hrm_right RCTRL DOUBLE_QUOTES  &hrm_right RALT TILDE  &trans
+&trans         &trans                &trans               &kp HOME                 &kp PERCENT              &kp LEFT_BRACKET        &trans  &kp RIGHT_BRACKET      &kp CARET                    &kp END                   &trans                          &trans                 &trans
+&trans         &trans                &trans               &trans                   &trans                   &trans                  &trans  &trans                 &trans                       &trans                    &trans                          &trans
             >;
 
             display-name = "sym";
