@@ -144,7 +144,7 @@ layers:
   - '|'
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-esc$$', s: '$$mdi:keyboard-tab$$'}
+  - {t: Gui+`, s: Gui+~}
   - '!'
   - '@'
   - '#'
