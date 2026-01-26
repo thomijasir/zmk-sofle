@@ -56,9 +56,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: 'Gui+$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-command$$'}
   - Ctl+$$mdi:arrow-up-bold$$
-  - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:keyboard-space$$', h: sym}
   - {t: '$$mdi:keyboard-tab$$', h: mos}
+  - {t: '$$mdi:keyboard-space$$', h: sym}
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
   - nav
@@ -316,9 +316,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - F11
   - Ctl+$$mdi:arrow-up-bold$$
