@@ -58,7 +58,7 @@ layers:
   - Ctl+$$mdi:arrow-up-bold$$
   - {t: '$$mdi:keyboard-tab$$', h: mos}
   - {t: '$$mdi:keyboard-space$$', h: sym}
-  - {t: '$$mdi:apple-keyboard-shift$$', s: '$$mdi:keyboard-tab$$'}
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
   - nav
