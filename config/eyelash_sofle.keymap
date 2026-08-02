@@ -44,7 +44,6 @@
 
     hrm_left: hrm_left {
         compatible = "zmk,behavior-hold-tap";
-        label = "HRM_LEFT";
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
@@ -56,7 +55,6 @@
 
     hrm_right: hrm_right {
         compatible = "zmk,behavior-hold-tap";
-        label = "HRM_RIGHT";
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
@@ -68,7 +66,6 @@
 
     esc_to_tab: esc_to_tab {
         compatible = "zmk,behavior-mod-morph";
-        label = "ESC_TO_TAB";
         bindings = <&kp ESCAPE>, <&kp TAB>;
 
         #binding-cells = <0>;
@@ -78,7 +75,6 @@
 
     shortcat_combo: shortcat_combo {
         compatible = "zmk,behavior-hold-tap";
-        label = "SHORTCAT_COMBO";
         bindings = <&kp>, <&shortcat>;
 
         #binding-cells = <2>;
@@ -90,7 +86,6 @@
 
     caps_to_tab: caps_to_tab {
         compatible = "zmk,behavior-mod-morph";
-        label = "CAPS_TO_TAB";
         bindings = <&kp CAPS>, <&kp TAB>;
 
         #binding-cells = <0>;
@@ -100,7 +95,6 @@
 
     shift_to_tab: shift_to_tab {
         compatible = "zmk,behavior-mod-morph";
-        label = "SHIFT_TO_TAB";
         bindings = <&kp LSHFT>, <&kp TAB>;
 
         #binding-cells = <0>;
@@ -145,8 +139,6 @@
                 <&kp LCMD>,
                 <&macro_release>,
                 <&kp LCTRL>;
-
-            label = "SCREENLOCK";
         };
 
         shortcat: shortcat {
@@ -163,8 +155,6 @@
                 <&kp LCMD>,
                 <&macro_release>,
                 <&kp LSHFT>;
-
-            label = "SHORTCAT";
         };
     };
 
@@ -182,7 +172,6 @@
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "main";
-            label = "main";
         };
 
         navigation {
