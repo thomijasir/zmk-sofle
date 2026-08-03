@@ -22,6 +22,31 @@
 
 For 3D printed model files or any issues and malfunctions with the keyboard, please contact [380465425@qq.com](mailto:380465425@qq.com)
 
+## Build Locally with Docker
+
+The local builder needs only a running Docker installation. The compiler, Zephyr SDK,
+West, and Python dependencies run inside ZMK's official build image.
+
+Build all firmware targets:
+
+```sh
+./build.sh
+```
+
+Build one target:
+
+```sh
+./build.sh eyelash_sofle_right
+./build.sh eyelash_sofle_studio_left
+./build.sh settings_reset
+```
+
+Finished firmware is written to `dist/`. The first build downloads the Docker image and
+ZMK dependencies, so it takes longer. Later builds reuse the `zmk-sofle-build-cache`
+Docker volume. Set `ZMK_BUILD_IMAGE` or `ZMK_BUILD_CACHE_VOLUME` to override those
+defaults. The official image currently uses `linux/amd64`; override
+`ZMK_BUILD_PLATFORM` if a native image becomes available for your host.
+
 ## Sofle Keymap
 
 ![Sofle键位图](keymap-drawer/eyelash_sofle.svg)
