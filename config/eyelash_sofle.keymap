@@ -102,6 +102,17 @@
         keep-mods = <(MOD_RGUI|MOD_LGUI|MOD_RCTL)>;
     };
 
+    mthl: mthl {
+        compatible = "zmk,behavior-hold-tap";
+        label = "MTHL";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <150>;
+        hold-trigger-key-positions = <7 8 9 10 11 12 20 21 22 23 24 25 33 34 35 36 37 38 46 47 48 49 50 51 60 61 62 63 59>;
+        quick-tap-ms = <150>;
+    };
+
     behaviors {
     };
 
@@ -163,24 +174,25 @@
 
         main {
             bindings = <
-&kp ESCAPE    &kp N1            &kp N2             &kp N3            &kp N4             &kp N5       &bt BT_SEL 0  &kp N6           &kp N7              &kp N8             &kp N9              &kp N0                     &kp F12
-&esc_to_tab   &kp Q             &kp W              &kp E             &kp R              &kp T        &bt BT_SEL 1  &kp Y            &kp U               &kp I              &kp O               &kp P                      &kp BACKSPACE
-&caps_to_tab  &hrm_left LALT A  &hrm_left LCTRL S  &hrm_left LCMD D  &hrm_left LSHFT F  &lt 5 G      &bt BT_PRV    &kp H            &hrm_right RSHFT J  &hrm_right RCMD K  &hrm_right RCTRL L  &hrm_right RALT SEMICOLON  &kp APOS
-&kp LCMD      &kp Z             &kp X              &kp C             &kp V              &kp B        &bt BT_NXT    &kp N            &kp M               &kp COMMA          &kp DOT             &lt 3 SLASH                &shortcat_combo RC(RIGHT_SHIFT) 0
-&trans        &msc SCRL_UP      &kp LC(UP_ARROW)   &lt 4 TAB         &lt 2 SPACE        &kp LSHFT    &bt BT_CLR    &mt RCTRL ENTER  &mo 1               &kp BACKSPACE      &kp DEL             &msc SCRL_DOWN
+&kp ESCAPE          &kp N1            &kp N2             &kp N3            &kp N4             &kp N5       &bt BT_SEL 0  &kp N6           &kp N7              &kp N8             &kp N9              &kp N0                     &kp F12
+&esc_to_tab         &kp Q             &kp W              &kp E             &kp R              &kp T        &bt BT_SEL 1  &kp Y            &kp U               &kp I              &kp O               &kp P                      &kp BACKSPACE
+&caps_to_tab        &hrm_left LALT A  &hrm_left LCTRL S  &hrm_left LCMD D  &hrm_left LSHFT F  &lt 5 G      &bt BT_PRV    &kp H            &hrm_right RSHFT J  &hrm_right RCMD K  &hrm_right RCTRL L  &hrm_right RALT SEMICOLON  &kp APOS
+&mthl LCMD LG(TAB)  &kp Z             &kp X              &kp C             &kp V              &kp B        &bt BT_NXT    &kp N            &kp M               &kp COMMA          &kp DOT             &lt 3 SLASH                &shortcat_combo RC(RIGHT_SHIFT) 0
+&trans              &msc SCRL_UP      &kp LC(UP_ARROW)   &lt 4 TAB         &lt 2 SPACE        &kp LSHFT    &bt BT_CLR    &mt RCTRL ENTER  &mo 1               &kp BACKSPACE      &kp DEL             &msc SCRL_DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "main";
+            label = "main";
         };
 
         navigation {
             bindings = <
-&trans        &kp NUMBER_1         &kp NUMBER_2     &kp NUMBER_3     &kp NUMBER_4       &kp N5             &mmv MOVE_UP     &kp NUMBER_6     &kp N7                       &kp N8                    &kp N9                  &kp N0               &trans
-&esc_to_tab   &kp KP_NUMBER_1      &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4    &kp KP_NUMBER_5    &mmv MOVE_DOWN   &kp KP_NUMBER_6  &kp KP_NUMBER_7              &kp KP_NUMBER_8           &kp KP_NUMBER_9         &kp KP_NUMBER_0      &kp BACKSPACE
-&caps_to_tab  &hrm_left LALT HOME  &kp LCTRL        &kp LCMD         &kp LSHFT          &kp PAGE_UP        &mmv MOVE_LEFT   &kp LEFT_ARROW   &hrm_right RSHFT DOWN_ARROW  &hrm_right RCMD UP_ARROW  &hrm_right RCTRL RIGHT  &hrm_right RALT END  &trans
-&trans        &trans               &kp K_MUTE       &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp PAGE_DOWN      &mmv MOVE_RIGHT  &trans           &kp PAGE_DOWN                &kp PAGE_UP               &trans                  &trans               &trans
-&trans        &trans               &trans           &trans           &kp F5             &kp F1             &mkp LCLK        &trans           &trans                       &trans                    &trans                  &trans
+&trans  &kp NUMBER_1         &kp NUMBER_2     &kp NUMBER_3     &kp NUMBER_4       &kp N5             &mmv MOVE_UP     &kp NUMBER_6     &kp N7                       &kp N8                    &kp N9                  &kp N0               &trans
+&trans  &kp KP_NUMBER_1      &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4    &kp KP_NUMBER_5    &mmv MOVE_DOWN   &kp KP_NUMBER_6  &kp KP_NUMBER_7              &kp KP_NUMBER_8           &kp KP_NUMBER_9         &kp KP_NUMBER_0      &kp BACKSPACE
+&trans  &hrm_left LALT HOME  &kp LCTRL        &kp LCMD         &kp LSHFT          &kp PAGE_UP        &mmv MOVE_LEFT   &kp LEFT_ARROW   &hrm_right RSHFT DOWN_ARROW  &hrm_right RCMD UP_ARROW  &hrm_right RCTRL RIGHT  &hrm_right RALT END  &trans
+&trans  &trans               &kp K_MUTE       &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp PAGE_DOWN      &mmv MOVE_RIGHT  &trans           &kp PAGE_DOWN                &kp PAGE_UP               &trans                  &trans               &trans
+&trans  &trans               &trans           &trans           &kp F5             &kp F1             &mkp LCLK        &trans           &trans                       &trans                    &trans                  &trans
             >;
 
             display-name = "nav";
@@ -200,11 +212,11 @@
 
         system {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4       &trans           &kp F6           &kp F7           &kp F8      &kp F9           &kp F10  &trans
-&trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &sys_reset       &bootloader        &trans           &bootloader      &sys_reset       &trans      &trans           &trans   &trans
-&trans  &trans        &trans          &out OUT_BLE  &rgb_ug RGB_EFF  &rgb_ug RGB_ON     &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &bl BL_INC  &bl BL_TOG       &trans   &trans
-&trans  &trans        &trans          &out OUT_USB  &rgb_ug RGB_EFR  &rgb_ug RGB_OFF    &rgb_ug RGB_EFF  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &bl BL_DEC  &rgb_ug RGB_TOG  &trans   &trans
-&trans  &trans        &trans          &trans        &trans           &trans             &rgb_ug RGB_TOG  &trans           &trans           &trans      &trans           &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4       &trans           &kp F6           &kp F7           &kp F8      &kp F9           &kp F10  &trans
+&trans  &trans        &trans        &trans        &sys_reset       &bootloader        &trans           &bootloader      &sys_reset       &bt BT_CLR  &bt BT_CLR_ALL   &trans   &trans
+&trans  &trans        &trans        &out OUT_BLE  &rgb_ug RGB_EFF  &rgb_ug RGB_ON     &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &bl BL_INC  &bl BL_TOG       &trans   &trans
+&trans  &trans        &trans        &out OUT_USB  &rgb_ug RGB_EFR  &rgb_ug RGB_OFF    &rgb_ug RGB_EFF  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &bl BL_DEC  &rgb_ug RGB_TOG  &trans   &trans
+&trans  &trans        &trans        &trans        &trans           &trans             &rgb_ug RGB_TOG  &trans           &trans           &trans      &trans           &trans
             >;
 
             display-name = "sys";
