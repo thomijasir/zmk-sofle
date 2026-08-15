@@ -1,29 +1,54 @@
 # Sofle
 
-- [中文](README.md)
-- [English](README_EN.md)
+- [English](README.md)
+- [中文](README_CN.md)
 
-## 更新列表
+## Update List
 
 - 2024/12/21
-  1. 增加zmk-studio支持（只需要刷新左手即可使用）。
+  1. Added support for zmk-studio (just refresh the left hand to use).
 - 2024/10/24
-  1. 修改供电模式，功耗降低。
-  2. 修正RGB供电自动关闭的功能。
-- 2025/3/30 增加睡眠进入时间1小时  增加防抖时间 优化睡眠后功耗 
+  1. Modified power supply mode to reduce power consumption.
+  2. Fixed the automatic shut-off feature for RGB power supply.
+- 2025/3/30
+  1. Added a 1-hour sleep entry time, increased the debounce time, and optimized power consumption while asleep.
 - 2025/8/22
-  1. 更新了soft off。当您同时按下 Q、S 和 Z 键并按住 2 秒钟时，键盘将进入深度睡眠状态，无法通过按键唤醒。携带外出时可以使用此功能。激活方式为按一次复位开关。
-  2. 这个月，我还更新了矮轴版本sofle和corne的外壳。框架和底板加厚了，复位开关的开口也进行了调整，可以轻松按下复位开关。目前，我们仍在构思如何设计带有倾斜支架的外壳。如果您仔细检查过 PCB，您会注意到有用于扩展 IO 的预留接口。不知道有没有人能够使用它们，我会尝试一下！
-  3. 右侧键盘屏幕上的GIF动画被移除，这将显著降低右侧键盘的功耗。
+  1. update the soft off.When you press the keys Q, S and Z simultaneously and hold them for 2 seconds, the keyboard will enter a deep sleep state and cannot be awakened by pressing the keys. This function can be used when carrying it outside. The activation method is to press the reset switch once.
+  2. This month, I also updated the low-profile (choc switch) versions of the sofle and corne cases. The frame and base plate have been thickened, and the opening of the reset switch has been adjusted so that the reset switch can be easily pressed. At present, we are still working out how to design a case with a tented (inclined) bracket. If you look closely at the PCB, you will notice reserved interfaces for expansion IO. I wonder if anyone has been able to make use of them — I will give it a try!
+  3. The GIF animations on the right-hand keyboard screen have been removed, which will significantly reduce the power consumption of the right-hand keyboard.
 
-> 如果您的键盘于2025年8月22之前更新，请更新最新的固件。
+> If your  sofle was updated before 2025/8/22, please update to the latest firmware.
 >
 
-## 联系我
+## Contact Me
 
-如需3D打印的模型文件或者键盘有任何异常和故障，请联系380465425@qq.com
+For 3D printed model files or any issues and malfunctions with the keyboard, please contact [380465425@qq.com](mailto:380465425@qq.com)
 
-## Sofle键位图
+## Build Locally with Docker
 
-![Sofle键位图](keymap-drawer/eyelash_sofle.svg)
+The local builder needs only a running Docker installation. The compiler, Zephyr SDK,
+West, and Python dependencies run inside ZMK's official build image.
 
+Build all firmware targets:
+
+```sh
+./build.sh
+```
+
+Build one target:
+
+```sh
+./build.sh eyelash_sofle_right
+./build.sh eyelash_sofle_studio_left
+./build.sh settings_reset
+```
+
+Finished firmware is written to `dist/`. The first build downloads the Docker image and
+ZMK dependencies, so it takes longer. Later builds reuse the `zmk-sofle-build-cache`
+Docker volume. Set `ZMK_BUILD_IMAGE` or `ZMK_BUILD_CACHE_VOLUME` to override those
+defaults. The official image currently uses `linux/amd64`; override
+`ZMK_BUILD_PLATFORM` if a native image becomes available for your host.
+
+## Sofle Keymap
+
+![Sofle keymap](keymap-drawer/eyelash_sofle.svg)
