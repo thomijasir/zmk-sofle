@@ -4,3 +4,6 @@ modules/
 tools/
 .west/
 dist/
+.codegraph/
+.DS_Store
+*.zip

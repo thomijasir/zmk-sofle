@@ -32,5 +32,8 @@ CONFIG_FLASH_MAP=y
 CONFIG_ZMK_USB=n
 CONFIG_ZMK_BLE=y
 
+# enable display drivers (nice_view)
+CONFIG_ZMK_DISPLAY=y
+
 #EXT POWER
 CONFIG_ZMK_EXT_POWER=y
